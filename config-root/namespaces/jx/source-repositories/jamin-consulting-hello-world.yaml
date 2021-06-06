@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: Jamin-Consulting
+    provider: github
+    repository: Hello_World
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jamin-consulting-hello-world
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/Jamin-Consulting/Hello_World.git
+  org: Jamin-Consulting
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: Hello_World
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/Jamin-Consulting/Hello_World

@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - Jamin-Consulting/Hello_World
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - Jamin-Consulting/jx3-terraform-azure-Infra
       require_self_approval: true
     cat: {}
@@ -20,6 +24,9 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      Jamin-Consulting/Hello_World:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
       Jamin-Consulting/jx3-azure-akv-cluster:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -31,6 +38,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      Jamin-Consulting/Hello_World:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       Jamin-Consulting/jx3-azure-akv-cluster:
       - config-updater
       - approve
@@ -75,6 +98,9 @@ data:
     triggers:
     - repos:
       - Jamin-Consulting/jx3-azure-akv-cluster
+      trusted_org: todo
+    - repos:
+      - Jamin-Consulting/Hello_World
       trusted_org: todo
     - repos:
       - Jamin-Consulting/jx3-terraform-azure-Infra

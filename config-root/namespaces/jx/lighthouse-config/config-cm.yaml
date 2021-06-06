@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        Jamin-Consulting/Hello_World: true
         Jamin-Consulting/jx3-azure-akv-cluster: true
         Jamin-Consulting/jx3-terraform-azure-Infra: true
     plank: {}
@@ -20,6 +21,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        Jamin-Consulting/Hello_World: merge
         Jamin-Consulting/jx3-azure-akv-cluster: merge
         Jamin-Consulting/jx3-terraform-azure-Infra: merge
       queries:
@@ -33,6 +35,7 @@ data:
         - needs-rebase
         repos:
         - Jamin-Consulting/jx3-azure-akv-cluster
+        - Jamin-Consulting/Hello_World
         - Jamin-Consulting/jx3-terraform-azure-Infra
       - labels:
         - updatebot
@@ -44,6 +47,7 @@ data:
         - needs-rebase
         repos:
         - Jamin-Consulting/jx3-azure-akv-cluster
+        - Jamin-Consulting/Hello_World
         - Jamin-Consulting/jx3-terraform-azure-Infra
       target_url: http://dashboard-jx.51.140.220.231.nip.io
 kind: ConfigMap
