@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         Jamin-Consulting/jx3-azure-akv-cluster: true
+        Jamin-Consulting/jx3-terraform-azure-Infra: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         Jamin-Consulting/jx3-azure-akv-cluster: merge
+        Jamin-Consulting/jx3-terraform-azure-Infra: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - Jamin-Consulting/jx3-azure-akv-cluster
+        - Jamin-Consulting/jx3-terraform-azure-Infra
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - Jamin-Consulting/jx3-azure-akv-cluster
+        - Jamin-Consulting/jx3-terraform-azure-Infra
       target_url: http://dashboard-jx.51.140.220.231.nip.io
 kind: ConfigMap
 metadata:
