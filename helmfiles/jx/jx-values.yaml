@@ -37,7 +37,7 @@ jxRequirements:
     owner: Jamin-Consulting
     repository: jx3-azure-akv-cluster
   ingress:
-    domain: change.me
+    domain: 51.140.220.231.nip.io
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -jx.

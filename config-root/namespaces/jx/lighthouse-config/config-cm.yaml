@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - Jamin-Consulting/jx3-azure-akv-cluster
-      target_url: http://dashboard-jx.
+      target_url: http://dashboard-jx.51.140.220.231.nip.io
 kind: ConfigMap
 metadata:
   creationTimestamp: null
