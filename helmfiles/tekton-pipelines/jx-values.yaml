@@ -20,12 +20,22 @@ jxRequirements:
     enabled: false
     schedule: ""
   cluster:
+    azure:
+      secretStorage:
+        keyVaultName: adapted-crane
+      storage:
+        storageAccountName: jxadaptedcrane
+    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
+    environmentGitOwner: Jamin-Consulting
     gitKind: github
     gitName: github
     gitServer: https://github.com
     provider: aks
+    registry: adaptedcrane.azurecr.io
   environments:
   - key: dev
+    owner: Jamin-Consulting
+    repository: jx3-azure-akv-cluster
   ingress:
     domain: change.me
     externalDNS: false
@@ -35,8 +45,13 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: jaminconsulting
   repository: nexus
   secretStorage: azurekeyvault
+  storage:
+  - name: logs
+    url: azblob://logs
   vault: {}
   webhook: lighthouse
 jxRequirementsIngressExternalDNS:
