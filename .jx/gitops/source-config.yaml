@@ -10,6 +10,12 @@ spec:
     repositories:
     - name: jx3-terraform-azure-Infra
     scheduler: in-repo
+  - owner: Jamin-Consulting
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: Hello_World
+    scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess
